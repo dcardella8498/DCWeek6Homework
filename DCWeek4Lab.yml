@@ -4,11 +4,6 @@
   become: true
 
   tasks: 
-    - name: Install Firefox
-      ansible.builtin.dnf:
-        name: firefox
-        state: latest
-
     - name: Install Git
       ansible.builtin.dnf:
         name: git
